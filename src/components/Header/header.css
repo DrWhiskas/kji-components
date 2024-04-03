@@ -1,0 +1,33 @@
+.header{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100vw;
+    height: 5vh;   
+    top: 0;
+    z-index: 1;
+}
+.header__container{
+    display: flex;
+    place-content: center;
+    flex-wrap: wrap;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 20vw;
+    min-width: 200px;
+    position: relative;
+    left: 10%;
+    border-radius: 0 0 10px 10px ;
+}
+.header__container__list{
+    display: flex;
+    gap: 1rem;
+}
+.header__container__list__links__link{
+    color: black;
+    font-weight: bold;
+    transition: all ease-in-out .2s;
+}
+.header__container__list__links__link:hover{
+    color: grey;
+}

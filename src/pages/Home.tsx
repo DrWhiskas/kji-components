@@ -1,10 +1,12 @@
-import React from "react";
-import Modal from "../components/Modal";
+import React from 'react';
+import BasicModal from '../components/Modal/BasicModal';
+import Header from '../components/Header/Header';
 
-export default function Home(){
-    return(
-        <>
-            <Modal />
-        </>
-    )
+export default function Home() {
+	return (
+		<>
+			<Header />
+			<BasicModal />
+		</>
+	);
 }
