@@ -1,0 +1,115 @@
+.modal{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    place-content: center;
+}
+.modal__content{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow-wrap: break-word;
+    left: 10%;
+    width: 20vw;
+    min-width: 150px;
+    height: auto;
+    padding: 1rem;
+}
+
+
+.modal__content__header{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    height: 5vh;
+    align-items: center;
+    width: 100%;
+}
+.modal__content__close{
+    transition: all ease-in-out .2s;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    place-items: center;
+    position: relative;
+    border: none;
+    background: none;
+}
+.modal__content__close:hover{
+    cursor: pointer;
+}
+
+.modal__content__footer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3%;
+    justify-content: end;
+}
+.modal__content__footer__btn{
+    padding: 1rem;
+    color: white;
+    border: none;
+    transition: all ease-in-out .2s;
+    font-weight: bold;
+}
+.modal__content__footer__btn:hover{
+    cursor: pointer;
+}
+
+
+
+.modal__custom{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 7%;
+    width: 20vw;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    overflow: scroll;
+    background-color: white;
+}
+.modal__custom__container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal__custom__container__subtitle{
+    margin-bottom: 5%;
+}
+
+.custom__input{
+    margin-top: 5%;
+    width: 30%;
+    min-width: 50px;
+    padding: 2%;
+    background-color: rgb(190, 188, 188);
+    color: black;
+    border: none;
+    font-weight: bold;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
+}
