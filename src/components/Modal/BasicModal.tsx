@@ -16,8 +16,10 @@ export default function BasicModal({ ...props }: ModalProps) {
 	const [contentBorderRadius, setContentBorderRadius] = useState('10');
 	const [closeColor, setCloseColor] = useState('black');
 	const [contentText, setContentText] = useState('Text');
+	const [contentTitle, setContentTitle] = useState('Title');
 	const [closeBtnColor, setCloseBtnColor] = useState('black');
 	const [submitBtnColor, setSubmitBtnColor] = useState('gray');
+
 
 	return (
 		<section
@@ -34,7 +36,7 @@ export default function BasicModal({ ...props }: ModalProps) {
 				}}
 			>
 				<div className="modal__content__header">
-					<h2 className="modal__content__header__title">Title</h2>
+					<h2 className="modal__content__header__title">{contentTitle}</h2>
 					<button
 						className="modal__content__close"
 						style={{ color: closeColor }}
@@ -79,6 +81,8 @@ export default function BasicModal({ ...props }: ModalProps) {
 				setCloseBtnColor={setCloseBtnColor}
 				submitBtnColor={submitBtnColor}
 				setSubmitBtnColor={setSubmitBtnColor}
+				contentTitle={contentTitle}
+				setContentTitle={setContentTitle}
 			/>
 		</section>
 	);

@@ -16,6 +16,8 @@ export interface CustomModalProps {
 	setCloseBtnColor: (color: string) => void;
 	submitBtnColor: string;
 	setSubmitBtnColor: (color: string) => void;
+	contentTitle?: string;
+	setContentTitle: (text: string) => void
 }
 
 export default function CustomModal({
@@ -33,6 +35,8 @@ export default function CustomModal({
 	setCloseBtnColor,
 	submitBtnColor,
 	setSubmitBtnColor,
+	contentTitle,
+	setContentTitle,
 }: CustomModalProps) {
 	return (
 		<section className="custom-modal">
@@ -81,6 +85,16 @@ export default function CustomModal({
 					/>
 				</div>
 				<div className="modal__custom__container">
+					<h3 className="modal__custom__container__subtitle subtitle">Title</h3>
+					<input
+						type="text"
+						name="text"
+						className="custom__input-text"
+						placeholder="add your title"
+						onChange={(event) => setContentTitle(event.target.value)}
+					/>
+				</div>
+				<div className="modal__custom__container">
 					<h3 className="modal__custom__container__subtitle subtitle">
 						Text content
 					</h3>
@@ -88,7 +102,7 @@ export default function CustomModal({
 						type="text"
 						name="text"
 						className="custom__input-text"
-						placeholder="Text"
+						placeholder="add your text"
 						onChange={(event) => setContentText(event.target.value)}
 					/>
 				</div>
