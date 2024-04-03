@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import { HashRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
+import BasicModal from './components/Modal/BasicModal';
+import Button from './components/Button/Button';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
@@ -14,6 +16,8 @@ root.render(
 			<Routes>
 				<Route path="/" element={<Home />} />
 				<Route path="/home" element={<Home />} />
+				<Route path="/modal" element={<BasicModal />} />
+				<Route path="/button" element={<Button />} />
 			</Routes>
 		</HashRouter>
 	</React.StrictMode>

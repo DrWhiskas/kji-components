@@ -7,12 +7,12 @@ export default function Header(){
 				<div className="header__container">
 					<ul className="header__container__list">
 						<li className="header__container__list__links">
-							<Link className="header__container__list__links__link" to="/">
+							<Link className="header__container__list__links__link" to="/home">
 								Modal
 							</Link>
 						</li>
 						<li>
-							<Link className="header__container__list__links__link" to="/">
+							<Link className="header__container__list__links__link" to="/button">
 								Button
 							</Link>
 						</li>
