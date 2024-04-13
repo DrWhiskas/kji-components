@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import CustomBtn from './CustomButton';
+import Header from '../Header/Header';
 import './basicButton.css'
 
 export interface ButtonProps {
@@ -17,6 +18,7 @@ export default function BasicButton({ ...props }: ButtonProps) {
 
 	return (
 		<section className="page-button">
+			<Header/>
 			<button
 				className="btn"
 				style={{
