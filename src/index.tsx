@@ -4,7 +4,7 @@ import './index.css';
 import { HashRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import BasicModal from './components/Modal/BasicModal';
-import Button from './components/Button/Button';
+import BasicButton from './components/Button/BasicButton';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
@@ -17,7 +17,7 @@ root.render(
 				<Route path="/" element={<Home />} />
 				<Route path="/home" element={<Home />} />
 				<Route path="/modal" element={<BasicModal />} />
-				<Route path="/button" element={<Button />} />
+				<Route path="/button" element={<BasicButton />} />
 			</Routes>
 		</HashRouter>
 	</React.StrictMode>
