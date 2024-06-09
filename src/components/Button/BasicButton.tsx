@@ -15,7 +15,8 @@ export default function BasicButton({ ...props }: ButtonProps) {
 	const [borderRadius, setBorderRadius] = useState('Text');
 	const [text, setText] = useState('Button');
 	const [textFontSize, setTextFontSize] = useState('10')
-	const [width, setWidth] = useState('10');
+	const [width, setWidth] = useState('200');
+	const [height, setHeight] = useState('200')
 
 	return (
 		<section className="page-button">
@@ -27,7 +28,8 @@ export default function BasicButton({ ...props }: ButtonProps) {
 					color: color,
 					borderRadius: borderRadius,
 					fontSize: textFontSize,
-					width: width
+					width: width,
+					height: height
 				}}
 			>
 				{text}
@@ -45,6 +47,8 @@ export default function BasicButton({ ...props }: ButtonProps) {
 				setTextFontSize={setTextFontSize}
 				width={width}
 				setWidth={setWidth}
+				height={height}
+				setHeight={setHeight}
 
 			/>
 		</section>

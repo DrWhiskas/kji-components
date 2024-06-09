@@ -41,7 +41,7 @@ export default function CustomModal({
 	return (
 		<section className="custom-modal">
 			<div className="modal__custom">
-				<h2 className="modal__custom__title">Customize your modal</h2>
+				<h2 className="modal__custom__title">Customize your Modal</h2>
 				<div className="modal__custom__container">
 					<h3 className="modal__custom__container__subtitle subtitle">
 						Background color

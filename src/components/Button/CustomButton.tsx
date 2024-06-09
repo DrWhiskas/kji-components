@@ -14,6 +14,8 @@ export interface CustomButtonProps {
 	setTextFontSize: (text: string) => void;
 	width: string;
 	setWidth: (text: string) => void;
+	height: string;
+	setHeight: (text: string) => void;
 }
 
 export default function CustomButton({
@@ -29,11 +31,15 @@ export default function CustomButton({
 	setTextFontSize,
 	width,
 	setWidth,
+	height, 
+	setHeight
 }: CustomButtonProps) {
+	
+	
 	return (
 		<section className="custom-modal">
 			<div className="modal__custom">
-				<h2 className="modal__custom__title">Customize your modal</h2>
+				<h2 className="modal__custom__title">Customize your Button</h2>
 				<div className="modal__custom__container">
 					<h3 className="modal__custom__container__subtitle subtitle">
 						Background color
@@ -79,6 +85,18 @@ export default function CustomButton({
 						className="custom__input-number"
 						placeholder="10"
 						onChange={(event) => setWidth(event.target.value + 'px')}
+					/>
+				</div>
+				<div className="modal__custom__container">
+					<h3 className="modal__custom__container__subtitle subtitle">
+						Height
+					</h3>
+					<input
+						type="number"
+						name="Height"
+						className="custom__input-number"
+						placeholder="10"
+						onChange={(event) => setHeight(event.target.value + 'px')}
 					/>
 				</div>
 				<div className="modal__custom__container">
