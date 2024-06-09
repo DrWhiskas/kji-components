@@ -4,14 +4,16 @@ import { HexColorPicker, HexColorInput } from 'react-colorful';
 export interface CustomButtonProps {
 	backgroundColor: string;
 	setBackgroundColor: (color: string) => void;
-	color?: string
-	setColor: (color: string) => void
+	color?: string;
+	setColor: (color: string) => void;
 	borderRadius: string;
 	setBorderRadius: (radius: string) => void;
 	text: string;
 	setText: (text: string) => void;
 	textFontSize: string;
 	setTextFontSize: (text: string) => void;
+	width: string;
+	setWidth: (text: string) => void;
 }
 
 export default function CustomButton({
@@ -25,7 +27,8 @@ export default function CustomButton({
 	setText,
 	textFontSize,
 	setTextFontSize,
-	
+	width,
+	setWidth,
 }: CustomButtonProps) {
 	return (
 		<section className="custom-modal">
@@ -66,6 +69,16 @@ export default function CustomButton({
 						className="custom__input-number"
 						placeholder="10"
 						onChange={(event) => setBorderRadius(event.target.value + 'px')}
+					/>
+				</div>
+				<div className="modal__custom__container">
+					<h3 className="modal__custom__container__subtitle subtitle">Width</h3>
+					<input
+						type="number"
+						name="Width"
+						className="custom__input-number"
+						placeholder="10"
+						onChange={(event) => setWidth(event.target.value + 'px')}
 					/>
 				</div>
 				<div className="modal__custom__container">
