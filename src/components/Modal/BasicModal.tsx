@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { HexColorPicker, HexColorInput } from 'react-colorful';
 import CustomModal from './CustomModal';
 import { X } from 'lucide-react';
 import './modal.css';

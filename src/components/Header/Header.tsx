@@ -17,7 +17,7 @@ export default function Header(){
 							</Link>
 						</li>
 						<li>
-							<Link className="header__container__list__links__link" to="/">
+							<Link className="header__container__list__links__link" to="/card">
 								Card
 							</Link>
 						</li>

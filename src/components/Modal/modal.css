@@ -60,9 +60,6 @@
 .modal__content__footer__btn:hover{
     cursor: pointer;
 }
-
-
-
 .modal__custom{
     position: absolute;
     display: flex;
@@ -92,7 +89,7 @@
     margin-top: 5%;
     width: 30%;
     min-width: 50px;
-    padding: 2%;
+    padding: 5%;
     background-color: rgb(190, 188, 188);
     color: black;
     border: none;

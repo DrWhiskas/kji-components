@@ -4,8 +4,10 @@ import './index.css';
 import { HashRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import BasicModal from './components/Modal/BasicModal';
-import Button from './components/Button/Button';
+import BasicButton from './components/Button/BasicButton';
+import Card from './pages/Card';
 import reportWebVitals from './reportWebVitals';
+import { Car } from 'lucide-react';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -17,7 +19,8 @@ root.render(
 				<Route path="/" element={<Home />} />
 				<Route path="/home" element={<Home />} />
 				<Route path="/modal" element={<BasicModal />} />
-				<Route path="/button" element={<Button />} />
+				<Route path="/button" element={<BasicButton />} />
+				<Route path="/card" element={<Card />} />
 			</Routes>
 		</HashRouter>
 	</React.StrictMode>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { HexColorPicker, HexColorInput } from 'react-colorful';
 
-export interface CustomModalProps {
+export interface CustomCardProps {
 	backgroundColor: string;
 	setBackgroundColor: (color: string) => void;
 	contentBackgroundColor: string;
@@ -17,10 +17,10 @@ export interface CustomModalProps {
 	submitBtnColor: string;
 	setSubmitBtnColor: (color: string) => void;
 	contentTitle?: string;
-	setContentTitle: (text: string) => void
+	setContentTitle: (text: string) => void;
 }
 
-export default function CustomModal({
+export default function CustomCard({
 	backgroundColor,
 	setBackgroundColor,
 	contentBackgroundColor,
@@ -37,7 +37,7 @@ export default function CustomModal({
 	setSubmitBtnColor,
 	contentTitle,
 	setContentTitle,
-}: CustomModalProps) {
+}: CustomCardProps) {
 	return (
 		<section className="custom-modal">
 			<div className="modal__custom">
